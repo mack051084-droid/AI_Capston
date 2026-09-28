@@ -1,0 +1,33 @@
+필요한 것
+
+edf: set 에서 변환시키면 됌
+
+hdf5: edf에서 변환, 데모에 코드 있음
+
+model_path: 사전 학습된 모델 위치
+->best.pt: 모델
+불러오는 키값: 데모기준(설명)
+
+config.json: 모델 세팅
+불러오는 키값: 데모기준(설명)
+modality_types: ['BAS', 'RESP', 'EKG', 'EMG'](모델이 입력받는 생체 신호 종류 'BAS':기초, 'RESP'호홉, 'EKG':심전도, 'EMG':근전도)
+in_channels: 1(각 신호 모달리티별 입력 채널의 개수)
+patch_size: 640(시계열 신호를 잘라내는 길이)
+embed_dim: 128(차원의 크기)
+num_heads:8 
+num_layers: 
+pooling_head
+model: SetTransformer(모델 종류, 순서가 없는 집합(set)데이터를 처리하기 위한 어텐견 기반 신경망 아키텍쳐)
+data_path: 없음
+split_path: path_to_/dataset_split.json()
+max_files: None#파일 최대 개수(데이터 불러올 개수)
+val_size: 100#검증 데이터 개수
+sampling_duration: 5(수집시간(분))
+sampling_freq: 128(샘플링 주파수)
+num_workers: 16
+{modality_type}_CHANNELS': num: 각 생체신호(BAS, RESP, EKG, EMG)의 종류개수
+
+channel_groups.json: 채널 정보
+
+utils.py#파일 
+save_data
