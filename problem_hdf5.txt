@@ -1,0 +1,2 @@
+Error processing file demo_data\sub-001\ses-001\eeg\.hdf5: [Errno 2] Unable to synchronously open file (unable to open file: name = 'demo_data\sub-001\ses-001\eeg\.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Error processing file demo_data\EESM23\sub-001\ses-001\eeg\demo_psg.hdf5: [Errno 2] Unable to synchronously open file (unable to open file: name = 'demo_data\EESM23\sub-001\ses-001\eeg\demo_psg.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)

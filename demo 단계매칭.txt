@@ -1,0 +1,6 @@
+Unknown: -1
+Wake:0
+Stage 1: 1
+Stage 2:2
+Stage 3:3
+REM:4
